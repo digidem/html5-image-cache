@@ -3,21 +3,27 @@
   "version": "0.0.1",
   "description": "Caches and images on a page in persistent storage",
   "main": "index.js",
-  "repository": { 
-    "type" : "git",
-    "url" : "http://github.com/digidem/html5-image-cache.git"
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/digidem/html5-image-cache.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify index.js > img-cache.js",
+    "postbuild": "uglifyjs img-cache.js -cm -o img-cache.min.js",
+    "preversion": "npm test && npm run build",
+    "lint": "standard index.js",
+    "test": "npm run lint"
   },
   "author": "Gregor MacLennan",
   "license": "MIT",
   "dependencies": {
-    "domready": "^1.0.5",
-    "inline-worker": "0.0.0"
+    "domready": "^1.0.8",
+    "idb-blob-store": "^1.1.4",
+    "img-observer": "^1.0.1"
   },
   "devDependencies": {
     "browserify": "^5.9.1",
+    "standard": "^5.4.1",
     "uglify-js": "^2.4.15"
   }
 }
