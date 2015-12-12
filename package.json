@@ -8,8 +8,8 @@
     "url": "http://github.com/digidem/html5-image-cache.git"
   },
   "scripts": {
-    "build": "browserify index.js > img-cache.js",
-    "postbuild": "uglifyjs img-cache.js -cm -o img-cache.min.js",
+    "build": "browserify index.js --standalone ImageCache -o image-cache.js",
+    "postbuild": "uglifyjs image-cache.js -cm -o image-cache.min.js",
     "preversion": "npm test && npm run build",
     "lint": "standard index.js",
     "test": "npm run lint"
@@ -17,9 +17,13 @@
   "author": "Gregor MacLennan",
   "license": "MIT",
   "dependencies": {
-    "domready": "^1.0.8",
+    "array.from": "^0.2.0",
+    "blob-to-buffer": "^1.2.3",
+    "concat-stream": "^1.5.1",
     "idb-blob-store": "^1.1.4",
-    "img-observer": "^1.0.1"
+    "img-observer": "^1.0.1",
+    "inherits": "^2.0.1",
+    "sha.js": "^2.4.4"
   },
   "devDependencies": {
     "browserify": "^5.9.1",
