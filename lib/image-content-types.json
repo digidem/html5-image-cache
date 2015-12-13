@@ -1,0 +1,8 @@
+{
+  "jpg": "image/jpeg",
+  "jpeg": "image/jpeg",
+  "png": "image/png",
+  "webp": "image/webp",
+  "tif": "image/tiff",
+  "tiff": "image/tiff"
+}
