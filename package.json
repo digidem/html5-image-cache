@@ -19,10 +19,13 @@
   "dependencies": {
     "array.from": "^0.2.0",
     "blob-to-buffer": "^1.2.3",
-    "concat-stream": "^1.5.1",
+    "collect-stream": "^1.1.1",
     "idb-blob-store": "^1.1.4",
     "img-observer": "^1.0.1",
     "inherits": "^2.0.1",
+    "level-browserify": "^1.1.0",
+    "mime-types": "^2.1.8",
+    "object-assign": "^4.0.1",
     "sha.js": "^2.4.4"
   },
   "devDependencies": {
