@@ -11,8 +11,8 @@
     "url": "http://github.com/digidem/html5-image-cache.git"
   },
   "scripts": {
-    "build": "browserify index.js --standalone ImageCache -o image-cache.js",
-    "postbuild": "uglifyjs image-cache.js -cm -o image-cache.min.js",
+    "build": "browserify index.js --standalone ImageCache -o dist/image-cache.js",
+    "postbuild": "uglifyjs dist/image-cache.js -cm -o dist/image-cache.min.js",
     "preversion": "npm test && npm run build",
     "lint": "standard index.js",
     "test": "npm run lint"
