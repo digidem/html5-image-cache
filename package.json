@@ -23,7 +23,7 @@
     "idb-blob-store": "^1.1.4",
     "img-observer": "^1.0.1",
     "inherits": "^2.0.1",
-    "level-browserify": "^1.1.0",
+    "level-js": "^2.2.3",
     "object-assign": "^4.0.1",
     "sha.js": "^2.4.4"
   },
