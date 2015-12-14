@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "Caches and images on a page in persistent storage",
   "main": "index.js",
-  "browser": {
-    "./lib/store.js": "./lib/store-browser.js"
-  },
   "repository": {
     "type": "git",
     "url": "http://github.com/digidem/html5-image-cache.git"
@@ -23,7 +20,6 @@
     "array.from": "^0.3.0",
     "blob-to-buffer": "^1.2.3",
     "collect-stream": "^1.1.1",
-    "fs-blob-store": "^5.2.0",
     "idb-blob-store": "^1.1.4",
     "img-observer": "^1.0.1",
     "inherits": "^2.0.1",
